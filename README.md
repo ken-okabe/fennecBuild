@@ -32,10 +32,6 @@ copypaste .mozconfig   x86 or arm?
    ac_add_options --disable-tests
    ac_add_options --disable-crashreporter
 
- 
-# Build Fennec
-   ac_add_options --enable-application=mobile/android
-   ac_add_options --target=arm-linux-androideabi
 
 # Add the correct paths here:
    ac_add_options --with-android-ndk="$HOME/android-ndk-r8e"
@@ -46,6 +42,8 @@ copypaste .mozconfig   x86 or arm?
    mk_add_options MOZ_MAKE_FLAGS="-j4"
 
 
+ac_add_options --enable-application=mobile/android
+   
 # DEBUG
 ac_add_options --target=i386-linux-android
 
