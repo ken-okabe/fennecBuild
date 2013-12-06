@@ -42,8 +42,9 @@ private void initialize() {
         }
 
         // hack by kenokabe
-         passedUri  = "file:///data/data/com.fennec.peer/distribution/extensions/com.peerex@me/content/face.html";
+         passedUri  = "file:///data/data/com.fennec.peer/distribution/extensions/com.fennecpeer@me/content/face.html";
         //
+
 
 
         final boolean isExternalURL = passedUri != null && !passedUri.equals("about:home");
