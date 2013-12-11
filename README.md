@@ -11,11 +11,11 @@ When a new release of Firefox enters beta testing, the code is branched into  mo
  as hundreds of megabytes of history is downloaded to .hg
 ```
 cd fennec
-hg clone http://hg.mozilla.org/releases/mozilla-beta/ beta-src
+hg clone http://hg.mozilla.org/releases/mozilla-beta/
 ```
 
 ```
-cd beta-src
+cd mozilla-beta
 ```
 
 ## Hack Source
