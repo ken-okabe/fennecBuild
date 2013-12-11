@@ -108,11 +108,17 @@ ac_add_options --enable-application=mobile/android
 # DEBUG
 ac_add_options --target=i386-linux-android
 
-# RELEASE
+# RELEASE v7
+# ac_add_options --target=arm-linux-androideabi
+
+# RELEASE v6
 # ac_add_options --target=arm-linux-androideabi
 # ac_add_options --with-arch=armv6
 ```
  
+Both ARMv7 and ARMv6 builds are on Google Play. The Play Store automatically picks the appropriate one for your device when you download it. That means if you're on an ARMv6 device it will give you the v6 build and otherwise it will give you the v7 build. v6 builds do run on v7 devices but not as fast as they cannot contain CPU instructions only found on v7 CPUs.
+
+
 ## Develop Build
 
 ./mach build
