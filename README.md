@@ -120,7 +120,9 @@ ac_add_options --target=i386-linux-android
 ## Add-on Development Cycle / Package&Test
 
 [ken@kens-MacBook-Air] $ /Users/ken/fennec/beta-src/obj-i386-linux-android/dist/bin/distribution/extensions
+
 [ken@kens-MacBook-Air] $ ls
+
 [ken@kens-MacBook-Air] $ ss clone https://github.com/kenokabe/com.fennecpeer
 
 rename it to com.fennecpeer@me
