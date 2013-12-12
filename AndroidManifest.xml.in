@@ -82,12 +82,18 @@
 		 android:debuggable="true">
 #endif
 
-        <activity android:name=".App"
-                  android:label="@MOZ_APP_DISPLAYNAME@"
+        <activity android:name=".WebApps$WebApp0"
+                  android:label="@string/webapp_generic_name"
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
                   android:windowSoftInputMode="stateUnspecified|adjustResize"
                   android:launchMode="singleTask"
+                  android:taskAffinity="org.mozilla.gecko.WEBAPP0"
+                  android:process=":@ANDROID_PACKAGE_NAME@.WebApp0"
+                  android:excludeFromRecents="true"
                   android:theme="@style/Gecko.App">
+             <intent-filter>
+                <action android:name="org.mozilla.gecko.WEBAPP0" />
+            </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
